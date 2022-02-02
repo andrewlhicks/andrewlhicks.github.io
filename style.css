@@ -1,0 +1,172 @@
+body {
+	font-family: Lora, Georgia, Times New Romas, Times, serif;
+	font-size: 12pt;
+	background-color: #fcfcfc;
+}
+
+/* CONTENT */
+
+div.content {
+	overflow: auto;
+	margin: 0 25% 10px 25%;
+	background-color: rgba(0,0,0,0.05);
+	position: relative;
+	border-radius: 0px 0px 4px 4px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+div.content {
+	margin: 0;
+	border-radius: 0;
+}
+
+}
+
+/* ROWS AND CARDS */
+
+div.row {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div.row::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+div.row > * {
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border-radius: 2px;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+div.row > *:first-child {
+	margin-left: 0;
+}
+
+div.row:last-child > * {
+	margin-bottom: 10px;
+}
+
+div.row > *::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+div.card {
+	width: 100%;
+}
+
+div.card-half {
+	width: calc((100% - 10px)/2);
+}
+
+div.card-fourth {
+	width: calc((100% - 30px)/4);
+}
+
+div.card-three-fourths {
+	width: calc((100% - 30px)*3/4 + 20px);
+}
+
+div.row > *.right {
+	float: right;
+}
+
+p {
+	padding: 0;
+	margin: 10px;
+}
+
+p.proof::before {
+	font-style: italic;
+	font-weight: bold;
+	content: 'Proof.';
+	
+}
+
+p.theorem {
+	font-style: italic;
+}
+
+p.theorem::before {
+	font-style: normal;
+	font-weight: bold;
+	content: 'Theorem.'
+}
+
+span.theorem {
+	font-style: normal;
+	font-weight: bold;
+}
+
+span.theorem::before {
+	content: ' (';
+}
+
+span.theorem::after {
+	content: ')';
+}
+
+p.proof::after {
+	content: '\25fc';
+}
+
+h1 {
+	padding: 0;
+	margin: 10px;
+	text-align: center;
+}
+
+h2 {
+	padding: 0;
+	margin: 10px;
+	border-bottom: thin solid black;
+}
+
+h3 {
+	padding: 0;
+	margin: 10px;
+}
+
+/* Mobile Card Sizes */
+
+@media only screen and (max-width: 750px) {
+
+div[class^="card"] {
+	width: 100%;
+	margin-left: 0;
+}
+
+}
+
+
+div.mitem {
+	padding: 0;
+	display: inline-block;
+	margin-top: 12px;
+	margin-bottom: 9px;
+	margin-left: 20px;
+	border-bottom: 3px solid white;
+	transition: border-bottom 0.1s
+}
+
+div.mitem:hover {
+	border-bottom: 3px solid black;
+}
+
+div#highlighted {
+	border-bottom: 3px solid black;
+}
+
+div.mitem > a {
+	text-decoration: none;
+	color: black;
+}
