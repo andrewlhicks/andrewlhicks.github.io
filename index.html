@@ -6,36 +6,44 @@
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<link rel="shortcut icon" href="">
-		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lora&family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script>
-			$(function(){
-    			$("#header").load("templates/header.html"); 
-			});
-		</script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 	</head>
 	<body>
-		<div class="content" id="header"></div>
+		<div class="content" id="header">
+			<div class="row">
+				<div class="card">
+					<h1>Andrew Hicks</h1>
+				</div>
+			</div>
+		</div>
 		<div class="content">
 			<div class="row">
 				<div class="card">
 					<div class="mitem" id="highlighted"><a href="">Home</a></div>
+					<div class="mitem"><a href="research">Research</a></div>
 					<div class="mitem"><a href="teaching">Teaching</a></div>
 					<div class="mitem"><a href="programming">Programming</a></div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="card">
+				<div class="card-half">
 					<h2>About me</h2>
 					<p>
 					My name is Andrew Hicks.
-					I am a current fifth-year graduate student studying mathematics at Lousiana State University.
+					I am a current sixth-year graduate student studying mathematics at Lousiana State University.
+					I plan to graduate December 2023.
+					My current research is in the Landau-de Gennes model for liquid crystals.
 					</p>
 					<p><b>Office:</b> Prescott 141A</p>
 					<p><b>Email:</b> ahick17 <b>AT</b> lsu.edu</p>
+					<p>You can find a copy of my CV <a href="documents/Andrew_Hicks_CV.pdf">here</a>.</p>
+				</div>
+				<div class="card-half">
+					<img src="images/profile_pic.jpeg" alt="Me at the Grand Canyon" width="100%"/>
+					<p>Here's a picture of me at the Grand Canyon in July 2023. It was definitely grander in person!</p>
 				</div>
 			</div>
 			<!-- <div class="row">

@@ -1,5 +1,6 @@
 body {
-	font-family: Lora, Georgia, Times New Romas, Times, serif;
+	font-family: Roboto, sans-serif;
+	/* font-family: Lora, Georgia, Times New Romas, Times, serif; */
 	font-size: 12pt;
 	background-color: #fcfcfc;
 }
@@ -28,6 +29,7 @@ div.content {
 div.row {
 	margin-left: 10px;
 	margin-right: 10px;
+	display: flex;
 }
 
 div.row::after {
@@ -169,4 +171,17 @@ div#highlighted {
 div.mitem > a {
 	text-decoration: none;
 	color: black;
+}
+
+/* Fonts */
+
+.font-Roboto {
+	font-family: Roboto, sans-serif;
+}
+
+/* Alignment */
+
+p.justify-space-between {
+	display: flex;
+	justify-content: space-between;
 }
