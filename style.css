@@ -104,6 +104,10 @@ p.theorem::before {
 	content: 'Theorem.'
 }
 
+p.footnote {
+	font-size: small;
+}
+
 span.theorem {
 	font-style: normal;
 	font-weight: bold;
