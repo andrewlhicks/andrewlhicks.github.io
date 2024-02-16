@@ -93,8 +93,12 @@ div.row > *.right {
 
 p {
 	padding: 0;
-	margin: 20px;
+	margin: 10px 20px 10px 20px;
 	line-height: 18pt;
+}
+
+p.line {
+	margin: 0px 20px 0px 20px;
 }
 
 p.proof::before {
@@ -151,27 +155,26 @@ p.proof::after {
 
 h1 {
 	padding: 0;
-	margin: 20px;
+	margin: 10px 20px 10px 20px;
 	text-align: center;
 }
 
 h2 {
 	padding: 0;
-	margin: 20px;
+	margin: 10px 20px 10px 20px;
 	text-align: center;
 }
 
 h3 {
 	padding: 0;
-	margin: 20px;
+	margin: 10px 20px 10px 20px;
 	padding-bottom: 6px;
 	border-bottom: thin solid rgb(230, 230, 230);
 }
 
 h4 {
 	padding: 0;
-	margin: 20px;
-	margin-bottom: -20px;
+	margin: 10px 20px 10px 20px;
 }
 
 /* Mobile Card Sizes */
@@ -184,7 +187,6 @@ div[class^="card"] {
 }
 
 }
-
 
 div.mitem {
 	padding: 0;
