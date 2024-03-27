@@ -177,6 +177,17 @@ h4 {
 	margin: 10px 20px 10px 20px;
 }
 
+span.title {
+	font-weight: bold;
+	font-style: italic;
+}
+
+span.title::after {
+	content: " – ";
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* Mobile Card Sizes */
 
 @media only screen and (max-width: 750px) {
@@ -187,28 +198,38 @@ div[class^="card"] {
 }
 
 }
+/* Links */
 
-div.mitem {
+a {
+	color: rgb(43, 102, 212);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(43, 102, 212);
+	text-decoration: underline;
+}
+
+/* Navigation Links */
+
+a.mitem {
 	padding: 0;
 	display: inline-block;
 	margin-top: 12px;
 	margin-bottom: 9px;
 	margin-left: 20px;
 	border-bottom: 3px solid white;
-	transition: border-bottom 0.1s
-}
-
-div.mitem:hover {
-	border-bottom: 3px solid black;
-}
-
-div#highlighted {
-	border-bottom: 3px solid black;
-}
-
-div.mitem > a {
+	transition: border-bottom 0.1s;
 	text-decoration: none;
 	color: black;
+}
+
+a.mitem:hover {
+	border-bottom: 3px solid black;
+}
+
+a#highlighted {
+	border-bottom: 3px solid black;
 }
 
 /* Fonts */
@@ -224,14 +245,16 @@ p.justify-space-between {
 	justify-content: space-between;
 }
 
-/* Links */
+/* Lists */
 
-a {
-	color: rgb(43, 102, 212);
-	text-decoration: none;
+ul {
+	margin: 0pt;
 }
 
-a:hover {
-	color: rgb(43, 102, 212);
-	text-decoration: underline;
+ol {
+	margin: 0pt;
+}
+
+li {
+	margin: 5pt 0pt 5pt 0pt;
 }
