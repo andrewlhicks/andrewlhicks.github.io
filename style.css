@@ -248,7 +248,7 @@ p.justify-space-between {
 /* Lists */
 
 ul, ol {
-	margin: 0pt 20pt 0pt 20pt;
+	margin: 10pt 20pt 10pt 20pt;
 	padding: 0pt 0pt 0pt 20pt;
 }
 
