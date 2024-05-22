@@ -16,11 +16,10 @@ body {
 /* CONTENT */
 
 div.content {
-	overflow: auto;
+	overflow: hidden;
 	margin: 10px 20%;
 	padding: 5px;
 	background-color: rgba(0,0,0,0.05);
-	position: relative;
 	border-radius: 4px;
 	display: flex;
 	flex-direction: column;
@@ -46,12 +45,12 @@ div.column-half {
 
 p {
 	padding: 0;
-	margin: 10px 20px 10px 20px;
+	margin: 10px 20px;
 	line-height: 18pt;
 }
 
 p.line {
-	margin: 0px 20px 0px 20px;
+	margin: 0px 20px;
 }
 
 p.proof::before {
@@ -69,10 +68,6 @@ p.theorem::before {
 	font-style: normal;
 	font-weight: bold;
 	content: 'Theorem.'
-}
-
-p.footnote {
-	font-size: small;
 }
 
 p.image {
@@ -106,28 +101,22 @@ p.proof::after {
 	content: '\25fc';
 }
 
-h1 {
+h1, h2, h3, h4 {
 	padding: 0;
-	margin: 10px 20px 10px 20px;
+	margin: 10px 20px;
+}
+
+h1 {
 	text-align: center;
 }
 
 h2 {
-	padding: 0;
-	margin: 10px 20px 10px 20px;
 	text-align: center;
 }
 
 h3 {
-	padding: 0;
-	margin: 10px 20px 10px 20px;
 	padding-bottom: 6px;
 	border-bottom: thin solid var(--bar-grey);
-}
-
-h4 {
-	padding: 0;
-	margin: 10px 20px 10px 20px;
 }
 
 span.title {
@@ -237,12 +226,12 @@ p.justify-space-between {
 /* Lists */
 
 ul, ol {
-	margin: 10pt 20pt 10pt 20pt;
+	margin: 10pt 20pt;
 	padding: 0pt 0pt 0pt 20pt;
 }
 
 li {
-	margin: 5pt 0pt 5pt 0pt;
+	margin: 5pt 0pt;
 }
 
 /* Changes for mobile modes */
