@@ -13,66 +13,61 @@
 	</head>
 	<body>
 		<div class="content" id="header">
-			<div class="row">
-				<div class="card">
-					<h1>Andrew Hicks</h1>
-				</div>
+			<div class="card">
+				<h1>Andrew Hicks</h1>
 			</div>
 		</div>
 		<div class="content">
-			<div class="row">
-				<div class="card">
-					<div class="navbar">
-						<div class="navbar-left">
-							<a class="navlink" href="../">Home</a>
-							<a class="navlink highlighted" href="../research">Research</a>
-							<a class="navlink" href="../teaching">Teaching</a>
-							<a class="navlink" href="../programming">Programming</a>
-						</div>
-						<div class="navbar-right">
-							<a class="txt-logo" target="_blank", href="../documents/Andrew_Hicks_CV.pdf">CV</a>
-							<a class="img-logo" target="_blank", href="https://github.com/andrewlhicks"><img src="../images/logos/github-mark/github-mark.svg"></a>
-							<a class="img-logo" target="_blank", href="https://www.linkedin.com/in/andrew-hicks-ba0b29b8/" style="filter: invert(0.8)"><img src="../images/logos/linkedin-mark/In-White-34.png"></a>
-						</div>					
+
+			<div class="card">
+				<div class="navbar">
+					<div class="navbar-left">
+						<a class="navlink" href="../">Home</a>
+						<a class="navlink highlighted" href="../research">Research</a>
+						<a class="navlink" href="../teaching">Teaching</a>
+						<a class="navlink" href="../programming">Programming</a>
 					</div>
+					<div class="navbar-right">
+						<a class="txt-logo" target="_blank", href="../documents/Andrew_Hicks_CV.pdf">CV</a>
+						<a class="img-logo" target="_blank", href="https://github.com/andrewlhicks"><img src="../images/logos/github-mark/github-mark.svg"></a>
+						<a class="img-logo" target="_blank", href="https://www.linkedin.com/in/andrew-hicks-ba0b29b8/" style="filter: invert(0.8)"><img src="../images/logos/linkedin-mark/In-White-34.png"></a>
+					</div>					
 				</div>
 			</div>
-			<div class="row">
-				<div class="card">
-					<h2>Research</h2>
-                    <h3>Current research</h3>
-					<p>
-						My current research is on the Landau-de Gennes model of liquid crystals, specifically focusing on "cholesteric shells".
-						Cholesteric shells are hollow shells composed of liquid crystal material, and which exhibit a "twisting" behavior, caused by the structure of the liquid crystal molecules.
-					</p>
-					<p class="image">
-						<img src="../images/layout_cshell_fro.png" alt="Simulation results" width="50%"/>
-					</p>
-					<p class="caption">
-						Simulation results for a cholesteric shell thickness 0.1.
-						We use twists of 5, 10, 15, 20, and 25.
-					</p>
-                    <p>
-                        Since these molecules can be represented by a line field defined by unit vector \(n\), we can color a cholesetric shell with coloring \(|n\cdot\nu|\), where \(\nu=[x,y,z]^T\).
-                        This manifests as stripes on the shell which have a period of \(2\pi/\tau_0\), where \(\tau_0\) is the cholesteric twist.
-                    </p><p>
-                        I have studied cholesteric shells under both homeotropic and planar degenerate type weak anchoring schemes.
-                        I employed a finite element discretization of the cholesteric problem, using a gradient descent scheme with initial guess \(n=[\cos(\tau_0z),\sin(\tau_0z),0]^T\) for each \(\tau_0\).
-                        The results of simulating on a shell with an inner radius of 0.9 and outer radius of 1, are shown on the right.
-                    </p>
-					<p>
-						For more details, see my research statement, my recent preprint accepted for publication, or my PhD thesis in the links below.
-					</p>
-					<h3>Publications</h3>
-					<p><ol>
-						<li>A. Hicks and Shawn Walker. "Modeling and Simulation of the Cholesteric Landau-de Gennes model". Preprint accepted for publication in <i>Proceedings of the Royal Society A</i> (<a href="../documents/Andrew_Hicks_Preprint.pdf" target="_blank">link</a>).</li>
-					</ol></p>
-					<h3>Other Resources</h3>
-					<p><ul>
-						<li>A. Hicks. Research Statement (<a href="../documents/Andrew_Hicks_Research_Statement.pdf" target="_blank">link</a>).</li>
-						<li>A. Hicks. "Modeling and Numerical Analysis of the Cholesteric Landau-de Gennes Model" (2024). <i>LSU Doctoral Dissertations</i>. 6390 (<a href="https://repository.lsu.edu/gradschool_dissertations/6390/" target="_blank">link</a>).</li>
-					</ul></p>
-				</div>
+			<div class="card">
+				<h2>Research</h2>
+				<h3>Current research</h3>
+				<p>
+					My current research is on the Landau-de Gennes model of liquid crystals, specifically focusing on "cholesteric shells".
+					Cholesteric shells are hollow shells composed of liquid crystal material, and which exhibit a "twisting" behavior, caused by the structure of the liquid crystal molecules.
+				</p>
+				<p class="image">
+					<img src="../images/layout_cshell_fro.png" alt="Simulation results" width="50%"/>
+				</p>
+				<p class="caption">
+					Simulation results for a cholesteric shell thickness 0.1.
+					We use twists of 5, 10, 15, 20, and 25.
+				</p>
+				<p>
+					Since these molecules can be represented by a line field defined by unit vector \(n\), we can color a cholesetric shell with coloring \(|n\cdot\nu|\), where \(\nu=[x,y,z]^T\).
+					This manifests as stripes on the shell which have a period of \(2\pi/\tau_0\), where \(\tau_0\) is the cholesteric twist.
+				</p><p>
+					I have studied cholesteric shells under both homeotropic and planar degenerate type weak anchoring schemes.
+					I employed a finite element discretization of the cholesteric problem, using a gradient descent scheme with initial guess \(n=[\cos(\tau_0z),\sin(\tau_0z),0]^T\) for each \(\tau_0\).
+					The results of simulating on a shell with an inner radius of 0.9 and outer radius of 1, are shown on the right.
+				</p>
+				<p>
+					For more details, see my research statement, my recent preprint accepted for publication, or my PhD thesis in the links below.
+				</p>
+				<h3>Publications</h3>
+				<p><ol>
+					<li>A. Hicks and Shawn Walker. "Modeling and Simulation of the Cholesteric Landau-de Gennes model". Preprint accepted for publication in <i>Proceedings of the Royal Society A</i> (<a href="../documents/Andrew_Hicks_Preprint.pdf" target="_blank">link</a>).</li>
+				</ol></p>
+				<h3>Other Resources</h3>
+				<p><ul>
+					<li>A. Hicks. Research Statement (<a href="../documents/Andrew_Hicks_Research_Statement.pdf" target="_blank">link</a>).</li>
+					<li>A. Hicks. "Modeling and Numerical Analysis of the Cholesteric Landau-de Gennes Model" (2024). <i>LSU Doctoral Dissertations</i>. 6390 (<a href="https://repository.lsu.edu/gradschool_dissertations/6390/" target="_blank">link</a>).</li>
+				</ul></p>
 			</div>
 		</div>
 	</body>
