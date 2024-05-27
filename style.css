@@ -237,7 +237,7 @@ li {
 /* Changes for mobile modes */
 
 @media only screen and (max-width: 1000px) {
-	div.content {
+	div.pane {
 		margin: 10px 0;
 	}
 	div.navbar {
