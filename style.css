@@ -30,9 +30,13 @@ div.pane {
 div.card {
 	flex: 100%;
 	background-color: var(--foreground-white);
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	border-radius: 2px;
 	margin: 5px;
+}
+
+div.cardcontent {
+	padding: 10px;
 }
 
 div.columns {
@@ -45,12 +49,12 @@ div.column-half {
 
 p {
 	padding: 0;
-	margin: 10px 20px;
+	margin: 10px;
 	line-height: 18pt;
 }
 
 p.line {
-	margin: 0px 20px;
+	margin: 0 10px;
 }
 
 p.proof::before {
@@ -103,7 +107,7 @@ p.proof::after {
 
 h1, h2, h3, h4 {
 	padding: 0;
-	margin: 10px 20px;
+	margin: 10px;
 }
 
 h1 {
@@ -226,12 +230,12 @@ p.justify-space-between {
 /* Lists */
 
 ul, ol {
-	margin: 10pt 20pt;
-	padding: 0pt 0pt 0pt 20pt;
+	margin: 10px;
+	padding: 0 0 0 26px;
 }
 
 li {
-	margin: 5pt 0pt;
+	margin: 5px 0;
 }
 
 /* Changes for mobile modes */
