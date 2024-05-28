@@ -235,7 +235,21 @@ ul, ol {
 }
 
 li {
-	margin: 5px 0;
+	margin: 8px 0;
+}
+
+ul.no-bullet {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.left-li-right > li {
+	display: flex;
+	justify-content: space-between;
+}
+
+ul.left-li-right > li:last-child {
+	text-align: right;
 }
 
 /* Changes for mobile modes */
