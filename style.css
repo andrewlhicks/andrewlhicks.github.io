@@ -173,11 +173,11 @@ a.navlink {
 	border-bottom: 3px solid var(--foreground-white);
 	transition: border-bottom 0.1s;
 	text-decoration: none;
-	color: black;
+	color: var(--black);
 }
 
 a.navlink:hover {
-	border-bottom: 3px solid black;
+	border-bottom: 3px solid var(--black);
 }
 
 a.txt-logo {
