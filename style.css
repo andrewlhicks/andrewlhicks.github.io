@@ -248,7 +248,7 @@ ul.left-li-right > li {
 	justify-content: space-between;
 }
 
-ul.left-li-right > li:last-child {
+ul.left-li-right > li > span:last-of-type {
 	text-align: right;
 }
 
