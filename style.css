@@ -169,7 +169,7 @@ div.navbar-right {
 
 a.navlink {
 	padding: 0;
-	margin: 12px 10px 9px;
+	margin: 11.4px 10px 9px;
 	border-bottom: 3px solid var(--foreground-white);
 	transition: border-bottom 0.1s;
 	text-decoration: none;
