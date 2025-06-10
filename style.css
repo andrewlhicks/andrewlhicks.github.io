@@ -203,6 +203,31 @@ a.txt-logo:hover {
 	opacity: 50%;
 }
 
+a.link-button {
+	padding: 0;
+	width: 60px;
+	height: 26px;
+	line-height: 26px;
+	font-size: small;
+	border-radius: 13px;
+	background-color: var(--black);
+	text-decoration: none;
+	color: var(--foreground-white);
+	margin: auto 10px auto;
+	text-align: center;
+	transition: opacity 0.1s;
+}
+
+a.link-button:hover {
+	opacity: 50%;
+}
+
+a.link-button > img {
+	width: 10px;
+	height: 10px;
+	margin: 0px;
+}
+
 a.img-logo {
 	padding: 0;
 	width: 26px;
