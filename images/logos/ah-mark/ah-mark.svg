@@ -27,14 +27,14 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="10.991597"
-     inkscape:cx="15.46636"
+     inkscape:cx="15.51185"
      inkscape:cy="17.058486"
      inkscape:window-width="1712"
      inkscape:window-height="1040"
      inkscape:window-x="0"
      inkscape:window-y="39"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1"
+     inkscape:current-layer="layer1"
      inkscape:lockguides="true" />
   <defs
      id="defs1" />
@@ -48,16 +48,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:0.264583"
-       x="1.1871812"
-       y="7.0150619"
-       id="text1"><tspan
-         sodipodi:role="line"
-         id="tspan1"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-         x="1.1871812"
-         y="7.0150619">AH</tspan></text>
+    <path
+       d="M 2.5926468,5.4571964 3.1175798,3.978353 h 0.011289 L 3.6368683,5.4571964 Z M 2.6773134,2.9849316 1.1533146,7.0150619 h 0.8918215 l 0.3160887,-0.897466 h 1.5070655 l 0.3047998,0.897466 H 5.0931338 L 3.5860683,2.9849316 Z m 2.7657726,0 V 7.0150619 H 6.3292631 V 5.2765743 H 7.9605063 V 7.0150619 H 8.8466834 V 2.9849316 H 7.9605063 V 4.5315082 H 6.3292631 V 2.9849316 Z"
+       id="text1"
+       style="font-weight:bold;font-size:5.64444px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Bold';stroke-width:0.264583"
+       aria-label="AH" />
   </g>
 </svg>
