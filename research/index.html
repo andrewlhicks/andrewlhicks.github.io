@@ -39,9 +39,10 @@
 			<div class="card">
 				<div class="cardcontent">
 					<h2>Research</h2>
-					<h3>Current research</h3>
+					<h3>Cholesteric Landau-de Gennes Model</h3>
+					<h4>Overview</h4>
 					<p>
-						My current research is on the Landau-de Gennes model of liquid crystals, specifically focusing on "cholesteric shells".
+						My research, which began during my Ph.D. at LSU under Prof. <a target="_blank" href="https://www.math.lsu.edu/~walker/">Shawn Walker</a>, has largely been focused on the Landau-de Gennes model of liquid crystals, specifically focusing on "cholesteric shells".
 						Cholesteric shells are hollow shells composed of liquid crystal material, and which exhibit a "twisting" behavior, caused by the structure of the liquid crystal molecules.
 					</p>
 					<p class="image">
@@ -61,6 +62,73 @@
 					</p>
 					<p>
 						For more details, see my research statement, my recent publication, or my PhD thesis in the links below.
+					</p>
+					<h4>SUAMI 2025</h4>
+					<p>
+						This past summer, I served as a mentor for the <a target="_blank" href="https://www.cmu.edu/math/undergrad/suami/2025/index.html">Summer Undergraduate Applied Mathematics Institute (SUAMI)</a> at Carnegie Mellon University.
+						I worked with three aspiring undergraduate students to study so-called "defects" in cholesteric liquid crystals.
+						Defects are locations in the liquid crystal where one of the \(\tau\), \(\lambda\), or \(\chi\) vector fields become discontinuous, where \(\tau=n\) is the director field, \(\chi\) points along the axis of twist, and \(\lambda=\tau\times\chi\).
+
+					</p>
+					<p class="image"><img src="../images/SUAMI_poster_session.jpg" width="66%"/></p>
+					<p class="caption">
+						(From left to right) Steven Spasov, Calum "Cal" Heldt, Yuzhi "Leon" Liu, and myself at the 2025 SUAMI poster session.
+					</p>
+					<p>
+						For this summer's project, I taught them the basics of the Landau-de Gennes model and all of the theory they would need to understand the problem.
+						Then, I had my students implement a finite element solver in <a target="_blank" href="https://www.firedrakeproject.org/">Firedrake</a> to perform simulations in 2D.
+						I then taught them how to use my <a target="_blank" href="https://github.com/andrewlhicks/q-tensor-3d">q-tensor-3d</a> finite element code to perform simulations in 3D.
+						They then got started simulating various defect structures in cholesteric liquid crystals, and presented their results at the end of the program.
+						Overall, it was a great experience mentoring these students and helping them get started in research.
+					</p>
+					<h3>Porous Phase Flow</h3>
+					<p>
+						Another research project I have recently started with Prof. <a target="_blank" href="https://www.cmu.edu/math/people/faculty/walkington.html">Noel J. Walkington</a> at CMU is in the modeling and simulation of flow through porous media.
+						This has applications in a variety of fields, including groundwater flow, oil recovery, and chemical engineering.
+					</p>
+					<p>
+						The following is based on notes from Prof. Walkington.
+						Suppose we have \(N_c\) conserved components and \(N_p\) phases.
+						A weak statement for the balance of masses \(m\) can be given by
+						\[
+						(m_t, \hat\mu)_\Omega + a(\nabla\mu, \nabla\hat\mu) = 0, \qquad \forall \hat\mu,
+						\]
+						where \(\hat\mu\) is a test function, \((\cdot,\cdot)_\Omega\) is the integrated inner product over domain \(\Omega\), \(a(\cdot,\cdot)\) is symmetric positive semi-definite, and \(\mu\in\partial\psi(m)\) where \(\psi\) is convex, proper, and lower semicontinuous.
+
+						An implicit Euler scheme can be given by:
+						\[
+						(m-\tilde m, \hat\mu)_\Omega + \Delta t\,a(\nabla\mu, \nabla\hat\mu) = 0, \qquad \forall \hat\mu,
+						\]
+						where \(\tilde m\) is the mass at the previous time step.
+						This, along with the constitutive relation \(\mu\in\partial\psi(m)\), is a saddle point of the following Lagrangian:
+						\[
+						L(\mu, m) = (m-\tilde m, \mu)_\Omega + \frac{\Delta t}{2}\,a(\nabla\mu, \nabla\mu) - \int_\Omega \psi(m)\,dx.
+						\]
+						To find the saddle point, we can find the minimizer of the convex functional
+						\[
+						I(\mu) = \sup_m L(\mu,m).
+						\]
+						We can then use a variation of Uzawa's algorithm to find \(\mu\): Given initial guess \(\mu_0\), for \(k=0,1,2,\ldots\) perform the following steps:
+					</p>
+					<ol>
+						<li>Compute
+							\[
+							m_k = \operatorname*{argmax}_{m\in[0,\infty)^{N_c}} \left[(m,\mu_k) - \int_\Omega\psi(m)\,dx\right].
+							\]
+						</li>
+						<li>Find the gradient \(g_k\) of \(I(\mu)\) at \(\mu_k\) by solving
+							\[
+							\Delta t \,a(\nabla g_k, \nabla\hat\mu) + (g_k,\hat\mu)= \Delta t\,a(\nabla\mu, \nabla\hat\mu) + (m_k - m_{k-1}, \hat\mu)_\Omega, \qquad \forall\hat\mu.
+							\]
+						</li>
+						<li>
+							Update \(\mu_{k+1} = \mu_k - \alpha_k g_k\), where \(\alpha_k\) is determined by a line search.
+						</li>
+					</ol>
+					<p>
+						To numerically solve this, a finite difference scheme will be implemented.
+						One important issue with this algorithm is that it is far too slow in practice, and rarely gives meaningful results.
+						My research this year will investigate better ways to implement this algorithm, or alternative approaches.
 					</p>
 					<h3>Publications</h3>
 					<p><ol>
